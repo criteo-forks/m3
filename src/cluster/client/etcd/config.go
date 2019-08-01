@@ -93,6 +93,7 @@ type Configuration struct {
 	ETCDClusters      []ClusterConfig        `yaml:"etcdClusters"`
 	SDConfig          services.Configuration `yaml:"m3sd"`
 	WatchWithRevision int64                  `yaml:"watchWithRevision"`
+	Async             bool                   `yaml:"async"`
 }
 
 // NewClient creates a new config service client.
